@@ -46,4 +46,5 @@ Run maven build.
 $ cd <Path of working directory>
 $ git clone https://github.com/SCHILKUNDA99/tradestore.git
 $ cd tradestore
+$ mvn clean install
 $ mvn spring-boot:run
