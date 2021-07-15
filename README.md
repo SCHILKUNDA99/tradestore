@@ -37,7 +37,7 @@ Project is created with:
 ## Setup
 To run this project, install it locally.
 Clone the project to desired directory using below command from cmd prompt.
-git clone https://github.com/SCHILKUNDA99/tradestore.git 
+$ git clone https://github.com/SCHILKUNDA99/tradestore.git 
 Import into ide of your choice as an existing maven project.
 Make sure your JAVA_HOME is set to the JDK path or the editor has the correct JDK set in the preferences 
 Run maven build.
@@ -48,3 +48,22 @@ $ git clone https://github.com/SCHILKUNDA99/tradestore.git
 $ cd tradestore
 $ mvn clean install
 $ mvn spring-boot:run
+
+Application Context Path  : /tradestore
+Application url base path : http://localhost:8080/tradestore
+Local H2 Database  Url    : http://localhost:8080/tradestore/h2-console
+
+Request URI : http://localhost:8080/tradestore/trades Method: POST
+Sample Request Body:
+	{
+    "tradeId": "T4",
+    "version" : "2",
+    "counterpartyId": "CP-1",
+    "bookId": "B1",
+    "maturityDate": "07/20/2021"
+	}
+	
+Sample Response Body :
+	{
+    "message": "Trade saved successfully"
+	}
